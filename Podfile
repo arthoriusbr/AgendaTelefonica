@@ -11,5 +11,6 @@ target 'AgendaTelefonica' do
   pod 'Alamofire'
   pod 'ObjectMapper'
   pod 'AlamofireObjectMapper'
+  pod 'RealmSwift'
 
 end

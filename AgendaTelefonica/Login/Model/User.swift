@@ -7,6 +7,7 @@
 //
 
 import ObjectMapper
+import RealmSwift
 
 class User: Mappable {
     

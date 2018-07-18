@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import RealmSwift
 
+let uiRealm = try! Realm()
 let baseUrl = "https://api-agenda-unifor.herokuapp.com/"
 
 @UIApplicationMain
