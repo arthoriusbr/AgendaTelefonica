@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AgendaTelefonica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WpV-H5-GyC">
+                                <rect key="frame" x="16" y="352" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAA-P5-MCK">
+                                <rect key="frame" x="16" y="417" width="343" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rN6-tZ-7lA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1HK-gc-0iG">
+                                <rect key="frame" x="16" y="302" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v04-Ov-gsN">
+                                <rect key="frame" x="16" y="455" width="343" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconeAplicativoAgenda" translatesAutoresizingMaskIntoConstraints="NO" id="fNQ-2P-OpU">
+                                <rect key="frame" x="112" y="52" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="SXD-Fa-x1i"/>
+                                    <constraint firstAttribute="width" constant="150" id="m7c-jr-8LU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WpV-H5-GyC" secondAttribute="trailing" constant="16" id="3mB-OH-THh"/>
+                            <constraint firstItem="1HK-gc-0iG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="68E-JU-0Rm"/>
+                            <constraint firstItem="WpV-H5-GyC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AfH-Vp-xgo"/>
+                            <constraint firstItem="fNQ-2P-OpU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="CyP-63-IT2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1HK-gc-0iG" secondAttribute="trailing" constant="16" id="DMH-m4-RJ6"/>
+                            <constraint firstItem="WpV-H5-GyC" firstAttribute="top" secondItem="1HK-gc-0iG" secondAttribute="bottom" constant="20" id="Eu1-G4-hNS"/>
+                            <constraint firstItem="NAA-P5-MCK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RW3-wd-u52"/>
+                            <constraint firstItem="v04-Ov-gsN" firstAttribute="top" secondItem="NAA-P5-MCK" secondAttribute="bottom" constant="8" id="WmZ-Hr-fiZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NAA-P5-MCK" secondAttribute="trailing" constant="16" id="fHF-ZQ-jRO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v04-Ov-gsN" secondAttribute="trailing" constant="16" id="fKC-gU-6d2"/>
+                            <constraint firstItem="1HK-gc-0iG" firstAttribute="top" secondItem="fNQ-2P-OpU" secondAttribute="bottom" constant="100" id="g4o-7O-NOR"/>
+                            <constraint firstItem="v04-Ov-gsN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qeF-Je-hKg"/>
+                            <constraint firstItem="NAA-P5-MCK" firstAttribute="top" secondItem="WpV-H5-GyC" secondAttribute="bottom" constant="35" id="s0b-Jy-5nT"/>
+                            <constraint firstItem="fNQ-2P-OpU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yWc-tn-PB5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="botaoCadastrarLogin" destination="v04-Ov-gsN" id="G46-B3-z89"/>
+                        <outlet property="botaoEntrarLogin" destination="NAA-P5-MCK" id="0cd-Mp-1aE"/>
+                        <outlet property="matriculaLogin" destination="1HK-gc-0iG" id="LzP-cn-NSO"/>
+                        <outlet property="senhaLogin" destination="WpV-H5-GyC" id="I11-5e-dcI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconeAplicativoAgenda" width="512" height="512"/>
+    </resources>
+</document>
