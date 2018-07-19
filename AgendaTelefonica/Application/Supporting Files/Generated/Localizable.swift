@@ -18,7 +18,7 @@ internal enum L10n {
     internal static let cadastrar = L10n.tr("Localizable", "login.cadastrar")
     /// Entrar
     internal static let entrar = L10n.tr("Localizable", "login.entrar")
-    /// Digite sua matrícula aqui
+    /// Digite seu email aqui
     internal static let matricula = L10n.tr("Localizable", "login.matricula")
     /// Digite sua senha aqui
     internal static let senha = L10n.tr("Localizable", "login.senha")

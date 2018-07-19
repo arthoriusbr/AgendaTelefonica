@@ -8,20 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     //MARK: - Vars
     var service: LoginService!
 
+    //MARK: - UIElements
     @IBOutlet weak var matriculaLogin: UITextField!
     @IBOutlet weak var senhaLogin: UITextField!
     @IBOutlet weak var botaoEntrarLogin: UIButton!
     @IBOutlet weak var botaoCadastrarLogin: UIButton!
     
+    //MARK: - Life
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.service = LoginService()
+        self.service = LoginService(delegate: self)
         
         self.matriculaLogin.placeholder = L10n.Login.matricula
         self.senhaLogin.placeholder = L10n.Login.senha
@@ -46,11 +48,21 @@ class ViewController: UIViewController {
         self.botaoCadastrarLogin.layer.cornerRadius = self.botaoCadastrarLogin.frame.height / 2
     }
 
+    //MARK: - Actions
     @IBAction func logar(_ sender: Any) {
         if let email = self.matriculaLogin.text, let senha = self.senhaLogin.text {
             self.service.postLogin(email: email, senha: senha)
         }
-        
+    }
+}
+
+extension LoginViewController: LoginServiceDelegate {
+    func postLoginSuccess() {
+        print("")
+    }
+    
+    func postLoginFailure(error: String) {
+        print(error)
     }
 }
 

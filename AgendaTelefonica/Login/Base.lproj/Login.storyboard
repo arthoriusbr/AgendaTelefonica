@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AgendaTelefonica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="AgendaTelefonica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconeAplicativoAgenda" translatesAutoresizingMaskIntoConstraints="NO" id="fNQ-2P-OpU">
-                                <rect key="frame" x="112" y="52" width="150" height="150"/>
+                                <rect key="frame" x="112.5" y="52" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="SXD-Fa-x1i"/>
                                     <constraint firstAttribute="width" constant="150" id="m7c-jr-8LU"/>
@@ -88,10 +88,19 @@
                         <outlet property="botaoEntrarLogin" destination="NAA-P5-MCK" id="0cd-Mp-1aE"/>
                         <outlet property="matriculaLogin" destination="1HK-gc-0iG" id="LzP-cn-NSO"/>
                         <outlet property="senhaLogin" destination="WpV-H5-GyC" id="I11-5e-dcI"/>
+                        <segue destination="Et3-ob-J71" kind="show" id="B0p-b6-GcC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Contatos-->
+        <scene sceneID="NXB-WI-Y1B">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contatos" id="Et3-ob-J71" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQY-uD-zSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="74"/>
         </scene>
     </scenes>
     <resources>

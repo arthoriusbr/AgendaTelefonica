@@ -1,6 +1,6 @@
 "app.title" = "Agenda";
 
-"login.matricula" = "Digite sua matrícula aqui";
+"login.matricula" = "Digite seu email aqui";
 "login.senha" = "Digite sua senha aqui";
 
 "login.cadastrar" = "Cadastrar";

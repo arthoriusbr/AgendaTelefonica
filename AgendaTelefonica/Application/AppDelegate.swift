@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 let uiRealm = try! Realm()
-let baseUrl = "https://api-agenda-unifor.herokuapp.com/"
+let baseUrl = "http://api-agenda-unifor.herokuapp.com/"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL?.absoluteString ?? "Não criado")
+        SessionControl.setHeadersParams()
+        
         return true
     }
 

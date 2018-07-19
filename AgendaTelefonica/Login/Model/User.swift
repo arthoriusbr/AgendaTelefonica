@@ -9,20 +9,26 @@
 import ObjectMapper
 import RealmSwift
 
-class User: Mappable {
+class User: Object, Mappable {
     
-    var id: Int?
+    var id = RealmOptional<Int>()
+    //Double, Float, Int, Bool -> RealmOptional<>()
+    
     var email: String?
     var accessToken: String?
     var client: String?
     var uid: String?
     
-    required init?(map: Map) {
-        
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    override static func primaryKey() -> String? {
+        return "id"
     }
     
     func  mapping(map: Map) {
-        self.id <- map ["id"]
+        self.id.value <- map ["id"] //self.id, como estava antes, agora é um RealmOptional. Para acessar seu inteiro de fato, deve fazer self.id.value.
         self.email <- map["email"]
     }
 }
