@@ -14,10 +14,10 @@ class User: Object, Mappable {
     var id = RealmOptional<Int>()
     //Double, Float, Int, Bool -> RealmOptional<>()
     
-    var email: String?
-    var accessToken: String?
-    var client: String?
-    var uid: String?
+    @objc dynamic var email: String?
+    @objc dynamic var accessToken: String?
+    @objc dynamic var client: String?
+    @objc dynamic var uid: String?
     
     required convenience init?(map: Map) {
         self.init()

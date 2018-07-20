@@ -28,6 +28,9 @@ class LoginViewController: UIViewController {
         self.matriculaLogin.placeholder = L10n.Login.matricula
         self.senhaLogin.placeholder = L10n.Login.senha
         
+        self.matriculaLogin.text = "arthur@gmail.com"
+        self.senhaLogin.text = "12345678"
+        
         self.botaoEntrarLogin.setTitle(L10n.Login.entrar, for: .normal)
 
 //        //para fazer apenas uma borda para o botao
@@ -58,10 +61,12 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginServiceDelegate {
     func postLoginSuccess() {
-        print("")
+        print("SUCESSO NO LOGIN")
+        self.perform(segue: StoryboardSegue.Login.segueEntrar)
     }
     
     func postLoginFailure(error: String) {
+        print("FALHA NO LOGIN")
         print(error)
     }
 }

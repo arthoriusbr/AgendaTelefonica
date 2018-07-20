@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831DD90B21021899003BF34B /* ContatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831DD90921021899003BF34B /* ContatoTableViewCell.swift */; };
+		831DD90C21021899003BF34B /* ContatoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831DD90A21021899003BF34B /* ContatoTableViewCell.xib */; };
 		8381F05220FF5A89008C88D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381F05120FF5A89008C88D0 /* AppDelegate.swift */; };
 		8381F05420FF5A89008C88D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381F05320FF5A89008C88D0 /* LoginViewController.swift */; };
 		8381F05720FF5A89008C88D0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8381F05520FF5A89008C88D0 /* Login.storyboard */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		568DB723EA1CCE68AE393B79 /* Pods-AgendaTelefonica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaTelefonica.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaTelefonica/Pods-AgendaTelefonica.release.xcconfig"; sourceTree = "<group>"; };
+		831DD90921021899003BF34B /* ContatoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoTableViewCell.swift; sourceTree = "<group>"; };
+		831DD90A21021899003BF34B /* ContatoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContatoTableViewCell.xib; sourceTree = "<group>"; };
 		8381F04E20FF5A89008C88D0 /* AgendaTelefonica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaTelefonica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8381F05120FF5A89008C88D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8381F05320FF5A89008C88D0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831DD90821021879003BF34B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				831DD90921021899003BF34B /* ContatoTableViewCell.swift */,
+				831DD90A21021899003BF34B /* ContatoTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		8381F04520FF5A89008C88D0 = {
 			isa = PBXGroup;
 			children = (
@@ -160,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				8381F07D20FF7826008C88D0 /* User.swift */,
-				8381F08C2100C5CB008C88D0 /* Contato.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +217,7 @@
 		8381F0862100C491008C88D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8381F08C2100C5CB008C88D0 /* Contato.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +242,7 @@
 		8381F0892100C4B5008C88D0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				831DD90821021879003BF34B /* Cells */,
 				8381F08A2100C4F4008C88D0 /* ContatosViewController.swift */,
 			);
 			path = Controllers;
@@ -312,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831DD90C21021899003BF34B /* ContatoTableViewCell.xib in Resources */,
 				8381F05C20FF5A96008C88D0 /* LaunchScreen.storyboard in Resources */,
 				8381F0852100C486008C88D0 /* Contatos.storyboard in Resources */,
 				8381F06920FF6734008C88D0 /* Colors.json in Resources */,
@@ -404,6 +419,7 @@
 				8381F07E20FF7826008C88D0 /* User.swift in Sources */,
 				8381F07220FF6C91008C88D0 /* Assets.swift in Sources */,
 				8381F08D2100C5CB008C88D0 /* Contato.swift in Sources */,
+				831DD90B21021899003BF34B /* ContatoTableViewCell.swift in Sources */,
 				8381F0912100C9A9008C88D0 /* ContatoService.swift in Sources */,
 				8381F05220FF5A89008C88D0 /* AppDelegate.swift in Sources */,
 				8381F07C20FF748E008C88D0 /* LoginService.swift in Sources */,

@@ -88,7 +88,7 @@
                         <outlet property="botaoEntrarLogin" destination="NAA-P5-MCK" id="0cd-Mp-1aE"/>
                         <outlet property="matriculaLogin" destination="1HK-gc-0iG" id="LzP-cn-NSO"/>
                         <outlet property="senhaLogin" destination="WpV-H5-GyC" id="I11-5e-dcI"/>
-                        <segue destination="Et3-ob-J71" kind="show" id="B0p-b6-GcC"/>
+                        <segue destination="Et3-ob-J71" kind="show" identifier="segueEntrar" id="B0p-b6-GcC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
